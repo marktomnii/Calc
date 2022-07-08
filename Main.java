@@ -19,11 +19,11 @@ public class Main {
         String[] arabianNumbers = {"1", "2", "3", "4", "5", "6", "7", "8", "9", "10"};
         String[] arabianMeanings = {"1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14",
                 "15", "16", "17", "18", "19", "20", "21", "24", "25", "28", "30", "32", "35", "36", "40", "42", "45", "48",
-                "50", "54", "56", "60", "63", "64", "70", "72", "80", "81", "90", "100", "49"};
+                "50", "54", "56", "60", "63", "64", "70", "72", "80", "81", "90", "100", "49", "27"};
         String[] romanianMeanings = {"I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX", "X", "XI", "XII",
                 "XIII", "XIV", "XV", "XVI", "XVII", "XVIII", "XIX", "XX", "XXI", "XXIV", "XXV", "XXVIII", "XXX",
                 "XXXII", "XXXV", "XXXVI", "XL", "XLII", "XLV", "XLVIII", "L", "LIV", "LVI", "LX", "LXIII", "LXIV",
-                "LXX", "LXXII", "LXXX", "LXXXI", "XC", "C", "XLIX"};
+                "LXX", "LXXII", "LXXX", "LXXXI", "XC", "C", "XLIX", "XXVII" };
         boolean bool = true;
         for (int i = 0; i <= 9; i++) {
             if (firstNumber.equals(romanianNumbers[i]) && bool) {
@@ -45,7 +45,7 @@ public class Main {
                         } else if (action.equals("-") && bool) {
                             niceNumber = fn - sn;
                             String finalNumber = String.valueOf(niceNumber);
-                            for (int y = 0; y <= 44; y++) {
+                            for (int y = 0; y <= 45; y++) {
                                 if (finalNumber.equals(arabianMeanings[y])) {
                                     return romanianMeanings[y];
                                 }
@@ -53,7 +53,7 @@ public class Main {
                         } else if (action.equals("*") && bool) {
                             niceNumber = fn * sn;
                             String finalNumber = String.valueOf(niceNumber);
-                            for (int y = 0; y <= 44; y++) {
+                            for (int y = 0; y <= 45; y++) {
                                 if (finalNumber.equals(arabianMeanings[y])) {
                                     return romanianMeanings[y];
                                 }
@@ -62,7 +62,7 @@ public class Main {
                             double meaning = (fn / sn);
                             int finalMeaning = (int) meaning;
                             String finalNumber = String.valueOf(finalMeaning);
-                            for (int y = 0; y <= 44; y++) {
+                            for (int y = 0; y <= 45; y++) {
                                 if (finalNumber.equals(arabianMeanings[y])) {
                                     return romanianMeanings[y];
                                 }
